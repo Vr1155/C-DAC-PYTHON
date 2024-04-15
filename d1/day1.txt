@@ -1,0 +1,299 @@
+Session-1:
+
+    Table of contents:
+        1. Installing Python
+        2. Introduction to Python
+        3. Basic Syntax
+        4. Variables
+        5. Data Types
+        6. Operators
+        7. Input/Output
+        8. Flow of Control (Modules, Branching)
+        9. If, If-else, Nested if-else
+        10. Looping-For, While, Nested loops
+        11. Control Structure
+        12. Uses of Break & Continue
+
+    day 1, 2, 3:
+        basic programming
+    day 4, 5, 6:
+        pandas, numpy and various other libraries.
+
+=======================================================================
+
+Python was released in 1991 by Guido van Rossum (Dutch Programmer).
+
+Python is used for:
+    -> Web Development (Server-side)
+    -> Software Development
+    -> Mathematics
+    -> System Scripting
+
+What can it do?
+    -> used on a server to create web applications.
+    -> used alongside software to create workflows
+    -> connects to database systems. It can also read and modify files
+    -> handles big data and perform complex Mathematics
+    -> used for rapid prototyping or for production-ready software Development
+
+Why use Python? 
+    -> Python runs on an interpreter system, meaning that code,
+       can be executed as soon as it is written. 
+       This means that prototyping can be very quick.
+    -> Python can be treated in 
+       a procedural, object-oriented or a functional way. 
+    -> Python has simple, concise and minimalist syntax.
+    -> Works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)
+
+Python Syntax:
+
+    Python syntax can be executed by writing directly in the Command Line:
+    ">>>" represents python shell.
+    to print "Hello, World!", simple run this:
+    >>>print("Hello, World!")
+    Output:
+    Hello, World!
+
+    You can create a python file on the server, using the .py file extension,
+    and running it in the Command line:
+    "C:\Users\Your Name>python myfile.py"
+
+    Python Indentation:
+        -> Indentation refers to the spaces at the beginning of a code line.
+        -> Where in other programming languages the indentation in code is
+           for readability only, the indentation in Python is very important.
+        -> Python uses indentation to indicate a block of code.
+
+    ======================================================
+    for eg:
+
+    if 4 > 2:
+        print("Four is greater than two!")
+    # notice that we used tab before print statement.
+
+    More eg:
+
+    #Syntax Error:
+    if 4 > 2:
+    print("Four is greater than two!")
+
+    #correct way:
+    if 4 > 2:
+        print("Four is greater than two")
+
+    # Syntax Error:
+    if 4 > 2:
+        print("Four is greater than two")
+            print("Four is greater than two")
+    # dont make unnecessary indentations
+
+    =================================================
+    
+    Creating a comment:
+
+    #This is a comment
+    print("Hello, World!")
+
+    print("Hello, World!") #This is a comment
+
+    Multiline Comment:
+
+    """
+    This is a comment
+    written in more than just one line
+    """
+
+    print("Hello, World!")
+
+    ==================================================
+
+    Python Variables:
+
+    Variables:
+        -> Variables are containers for storing data values.
+
+    Creating Variables:
+        -> Python has no command for declaring a Variables
+        -> A variable is created the moment you first assign a value to it.
+    
+    Example:
+        x = 5
+        y = "Ram"
+        print(x)
+        print(y)
+
+    Variables do not need to be declared  with any particular type, 
+    and can even change type after they have been set.
+
+    Example:
+        x = 4 #x is of type int
+        x = "Seth" #x is not of type str
+        print(x)
+
+    ==================================================
+
+    Casting:
+
+        Casting helps us specify the data type of a variable.
+
+        Example:
+
+            x = str(3) #x will be '3'
+            y = int(3) #y will be 3
+            z = float(3) #z will be 3.0
+
+    ===================================================
+
+    Get the type:
+
+        You can get the data type of a variable with the type() function.
+
+        Examples:
+
+            x = 5
+            y = "Ram"
+            print(type(x))
+            print(type(y))
+
+            x = "Ram"
+            # is the same as
+            x = 'Ram'
+
+            # this will create two variables:
+            a = 4
+            A = "Seth"
+            # A will not overwrite A
+
+    ============================================================
+
+    Important Note: Python is case sensitive.
+
+    ============================================================
+
+    Examples:
+
+    # Legal variable names:
+    _my_var = "Ram"
+    myVar = "Ram"
+    MYVAR = "Ram"
+    myvar2 = "Ram"
+    myvar = "Ram"
+    my_var = " Ram"
+
+    =============================================================
+
+    Many values to multiple variables:
+
+        Python allows you to assign values to multiple variables in one line.
+
+        Example:
+        x, y, z = "Bat", "Hat", "Car"
+        print(x)
+        print(y)
+        print(z)
+
+    
+    One value to multiple variables
+
+        You can assign the some value to multiple variables in one line:
+        
+        Example:
+        x = y = z = "Car"
+        print(x)
+        print(y)
+        print(z)
+
+    =============================================================
+
+    unpack a collection was skipped.
+
+    =============================================================
+
+    Output variables:
+        In the print() function, when you try to combine a string 
+        and a number with + operator, Python will give you error.
+
+        Examples:
+
+        x = 5
+        y = "Ram"
+        print(x + y) # Error
+
+        x = 5 
+        y = "Ram"
+        print(x, y)
+
+        # Create a variable outside a function,
+        # and use it inside the function
+
+            Example:
+
+            x = "Friday"
+
+            def myfunc():
+                print("Today is" + x)
+            
+            myfunc()
+
+    ====================================================
+
+    in the lab anaconda navigator is available in cloud
+    instructor will give you the path,
+    download and install it,
+    make sure you have enough space in your system.
+
+    Anaconda navigator is a very heavy software.
+    Anaconda is the platform on which you need to run jupyter notebook.
+    You will see "Internal server error"
+    Instructor says you need "LAN connection"
+
+    Instructor executes all code taught till now inside a jupyter notebook.
+    use shortcuts like 
+    ctrl + enter = run code in current block
+    ctrl + n = new cell
+    ctrl + d = delete cell
+
+    some code executed:
+
+        x=5
+        y="Hi"
+        y2='Hi'
+        x="Hello"
+        z=str(3)
+        a=int(3)
+        b=float(3)
+        x1,y1,z1="Hi","Hello","Good"
+        print(x1)
+        print(y1)
+        print(y2)
+        print(z1)
+        x1=y1=z1="Hi"
+
+        print(x1)
+        print(y1)
+        print(z1)
+
+        """
+        print(x)
+        print(type(x))
+        print(y)
+        print(type(z))
+        print(type(a))
+        print(b)
+        """
+
+    ====================================================
+
+    #some more code:
+
+    x="Hi"
+    y=5
+    #print(x+5) # this will give typeerror
+    print(x,5)
+
+    x="Monday"
+
+    def myfunc():
+        print("Today is"+x) # not giving indentation will give indent error
+
+    myfunc()
