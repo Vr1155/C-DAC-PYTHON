@@ -64,6 +64,14 @@ Python Syntax:
            for readability only, the indentation in Python is very important.
         -> Python uses indentation to indicate a block of code.
 
+        Pro tip:
+            use this online tool to find non-printable chars in your string:
+            https://www.soscisurvey.de/tools/view-chars.ph
+
+        Note:
+            right now python 3.12 is the latest version available to install.
+            use $python3.12 filename.py
+
     ======================================================
     for eg:
 
@@ -326,6 +334,241 @@ Python Syntax:
         Binary Types:           bytes, bytearray, memoryview
         None Type:              NoneType
 
+    ====================================================
+
+    Operators:
+
+        Example:
+            print(10+5)
+
+        Python divides the operators in the following groups:
+            -> Arithmetic operators
+            -> Logical operators
+            -> Bitwise operators
+            -> Assignment operators
+            -> Identity operators
+            -> Comparison operators
+            -> Membership operators
 
 
-        
+            Operators           Name
+            +                   Addition
+            -                   Subtraction
+            *                   Multiplication
+            /                   Division
+            %                   Modulus
+            **                  Exponentiation
+            //                  floor division
+
+    Assignment Operators:
+
+    =
+    +=
+    -=
+    *=
+    /=
+    %=
+    //=
+    /=
+    **=
+    &=
+    |=
+    ^=
+    >>=
+    <<=
+
+    Comparision operators:
+
+    Operator    Name
+    ==          Equal
+    !=          Not equal
+    >           greater than
+    <           less than
+    >=          greater than or equal to
+    <=          less than or equal to
+
+    Python identity operators
+    (Checks if its actually the same object with the same memory location)
+
+    is
+    is not
+
+
+    Python Membership operators:
+    (used to check if a sequence is in an object or not)
+
+    in 
+    not in
+
+    =============================================================
+
+    User Input:
+
+    python3.6 uses input()
+    python2.7 uses raw_input()
+
+    3.6:
+    username = input("Enter username")
+    print("Username is: "+username)
+
+    Flow of control:
+        What is a module?
+            Module is almost same as a code library.
+            A file containing a set of functions 
+            you want to include in your application.
+            extension of module file is .py
+
+            Example:
+
+            1.
+            # Save this code in a file named myfile.py
+            def message(name):
+                print("Hello,"+name)
+
+            2.
+            # Import the module named myfile
+            # and call the message function:
+            import myfile
+            mymodule.message("All")
+
+            3. 
+            File myfile.py
+            person1 = {
+                "name": "Ram",
+                "age": 36,
+                "country": "India"
+            }
+
+            4. 
+            #import the module named myfile,
+            #and access the person1 dictionary:
+            import myfile
+            a=myfile.person1["age"]
+            print(a)
+
+            5.
+            #create an alias for myfile called mf:
+            import myfile as mf
+            a = mf.person1["age"]
+            print(a)
+
+            6. 
+            #Built-in modules:
+            import platform
+            x=platform.system()
+            print(x)
+
+            7.
+            def msg(name):
+                print("Hello,"+name)
+
+            person1 = {
+                "name": "Ram",
+                "age": 36,
+                "country": "India"
+            }
+
+            8. 
+            #import only the person1 dictionary from the module:
+            from myfile import person1
+            print(person1['age'])
+
+            Note: 
+            When importing from using the from keyword, 
+            do not use the module name when referring to elements in the module. 
+            Example person1["age"], not mymodule.person1["age"] 
+
+    ==========================================================
+
+    Q: Write a program to display a three line message.
+    Q: WAP to take input from the user student number or id, 
+    student name, branch and university. print the details.
+    Q: Create a module consisting of two functions,
+    area of rectangle and area of square from the main program.
+    do the following:
+        a.) Calculate area of both.
+        b.) Calculate area of square only.
+        c.) Calculate area of rectangle only
+
+    ==========================================================
+
+    if-else
+
+        Python supports the usual logical conditions
+
+    indentation:
+        python relies on indentation
+
+    elif:
+        The elif keyword is python's way of saying "if the previous conditions were 
+        not true, then try this condition".
+
+        Example:
+            a=20
+            b=20
+            if b>a:
+                print("b is greater than a")
+            elif a==b:
+                print("b is equal to a")
+
+
+    else:
+        example:
+        a=100
+        b=20
+        if b>a:
+            print("b is greater than a")
+        elif a==b:
+            print("b is equal to a")
+        else:
+            print("a is greater than b")
+
+
+    One line if else statement:
+     
+     a=20
+     b=100
+     print("A") if a>b else print("B")
+
+
+     =================================================================
+
+     and keyword:
+
+        The and keyword is a logical operator,
+        and is used to combine conditional statements.
+
+        Example:
+            #test if a is greater than b, AND if c is greater than a:
+
+            a=100
+            b=20
+            c=200
+            if a>b and c>a:
+                print("Both conditions are True")
+
+    =============================================================
+
+    Instructor says that try to write as little lines as possible
+    while coding in python.
+
+    Instructor does not like seeing multiline if condition statements
+    in exams. So try to make your code as concise as possible.
+
+    =============================================================
+
+    a few logical operators were skipped.
+
+    =============================================================
+
+    The pass statement:
+        If statements cannot be empty,
+        but if you for some reason have an if statement with no content,
+        put in the pass statement to avoid getting an error.
+
+    Example:
+
+        a=20
+        b=100
+        if b>a:
+            pass
