@@ -135,7 +135,7 @@ Python Syntax:
 
     Example:
         x = 4 #x is of type int
-        x = "Seth" #x is not of type str
+        x = "Seth" #x is of type str
         print(x)
 
     ==================================================
@@ -180,7 +180,7 @@ Python Syntax:
 
     Examples:
 
-    # Legal variable names:
+    # Valid variable names:
     _my_var = "Ram"
     myVar = "Ram"
     MYVAR = "Ram"
@@ -258,8 +258,8 @@ Python Syntax:
     Instructor executes all code taught till now inside a jupyter notebook.
     use shortcuts like 
     ctrl + enter = run code in current block
-    ctrl + n = new cell
-    ctrl + d = delete cell
+    a = new cell above
+    dd = delete cell
 
     Question: 
     Why is there a kernel inside jupyter notebook?
