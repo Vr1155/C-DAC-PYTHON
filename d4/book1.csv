@@ -1,11 +1,12 @@
-Book number,Book Name
-1,Animal Farm
-2,1984
-3,Fahrenheit 451
-4,Atomic habits
-5,Brave new world.
-6,Alice in Wonderland
-7,Sherlock Holmes
-8,Harry Potter
-9,Lord of the Rings
-10,Song of Ice and Fire
+Book number,Book Name,Date
+1,Animal Farm,21-12-2020
+,1984,11-04-2023
+3,Fahrenheit 451,21-01-2019
+4,,22-07-2017
+5,Brave new world.,22-08-2020
+6,, 5/2009
+7,Sherlock Holmes,22-09-2001
+8,Harry Potter,24-08-2003
+,Lord of the Rings,28-09-1994
+10,Song of Ice and Fire,20-10-2000
+1,Animal Farm,21-12-2020
